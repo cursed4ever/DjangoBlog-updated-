@@ -7,7 +7,7 @@ urlpatterns = [
     url(r'^create$', "posts.views.posts_create"),
     url(r'^$', "posts.views.posts_list"),
     url(r'^delete$', "posts.views.posts_delete"),
-    url(r'^details$', "posts.views.posts_details"),
+    url(r'^detail/(?P<id>\d+)/$', "posts.views.posts_details", name = 'detail'),
     url(r'^update$', "posts.views.posts_update"),
 
 ]
